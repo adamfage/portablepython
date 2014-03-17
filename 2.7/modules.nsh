@@ -134,6 +134,11 @@ SectionGroup "Modules"
 		SetOutPath "$INSTDIR\App\Lib\site-packages\"
 		File /r "${SOURCESFOLDER}\pandas\PLATLIB\*.*"
 	SectionEnd 
+	Section "IbPy" MODULE_IBPY
+		SectionIn 1
+		SetOutPath "$INSTDIR\App\Lib\site-packages\"
+		File /r "${SOURCESFOLDER}\IbPy-master*.*"
+	SectionEnd 
 SectionGroupEnd
 
 SectionGroup "Code editors"
