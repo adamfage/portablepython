@@ -659,7 +659,7 @@ call COMMON :DownloadFile %IbPy_DOWNLOAD%
 
 :: Unpack files
 call COMMON :LogMessage "Extracting IbPy files"
-tools\uniextract16\UniExtract.exe "%BIN_FOLDER%\%IbPy_FILE%" %UNPACK_FOLDER%\IbPy\ >NUL
+tools\uniextract16\bin\7z.exe x "%BIN_FOLDER%\%IbPy_FILE%" -o%UNPACK_FOLDER%\IbPy\ -y
 
 :: Fix
 call COMMON :FixMSCRT %UNPACK_FOLDER%\IbPy\
