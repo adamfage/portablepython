@@ -44,6 +44,7 @@ call :UnpackPyGTK
 call :UnpackPyQT
 call :UnpackIPython
 call :UnpackPandas
+call :UnpackIbPy
 
 goto:EOF
 
@@ -640,6 +641,28 @@ tools\uniextract16\UniExtract.exe "%BIN_FOLDER%\%PANDAS_FILE%" %UNPACK_FOLDER%\p
 
 :: Fix
 call COMMON :FixMSCRT %UNPACK_FOLDER%\pandas\
+
+endlocal&goto :EOF
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+:UnpackIbPy
+::
+:: By:   Perica Zivkovic
+:: Func: Downloads and extracts IbPy
+:: Args: none
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+setlocal ENABLEEXTENSIONS
+
+:: Download 
+call COMMON :DownloadFile %IbPy_DOWNLOAD%
+
+:: Unpack files
+call COMMON :LogMessage "Extracting IbPy files"
+tools\uniextract16\UniExtract.exe "%BIN_FOLDER%\%IbPy_FILE%" %UNPACK_FOLDER%\IbPy\ >NUL
+
+:: Fix
+call COMMON :FixMSCRT %UNPACK_FOLDER%\IbPy\
 
 endlocal&goto :EOF
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
