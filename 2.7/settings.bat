@@ -107,3 +107,7 @@ set IPYTHON_MD5=d4bbe64ccefaf9c46536ab94b846db6f
 set PANDAS_DOWNLOAD="https://pypi.python.org/packages/2.7/p/pandas/pandas-0.11.0.win32-py2.7.exe"
 set PANDAS_FILE=pandas-0.11.0.win32-py2.7.exe
 set PANDAS_MD5=aaefa25cc5042f0408834f4d1f74ed10
+
+set IBPY_DOWNLOAD="https://codeload.github.com/blampe/IbPy/zip/master/IbPy-master.zip"
+set IBPY_FILE=IbPy-master.zip
+set IBPY_MD5=bfc34a9fb5d7e67bddf052c1872971ec
