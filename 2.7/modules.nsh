@@ -137,7 +137,7 @@ SectionGroup "Modules"
 	Section "IbPy" MODULE_IBPY
 		SectionIn 1
 		SetOutPath "$INSTDIR\App\Lib\site-packages\"
-		File /r "${SOURCESFOLDER}\IbPy-master*.*"
+		File /r "${SOURCESFOLDER}\IbPy-master\*.*"
 	SectionEnd 
 SectionGroupEnd
 
